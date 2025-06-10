@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Resultado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="#">Vídeo</a>
+        <a href="#">Como plantar</a>
+        <a href="#">Transportes alternativos</a>
+    </nav>
+    <div class="telaInicial">
+        <p id="result"></p>
+        <button onclick="window.location.href='index.html'">Voltar ao Início</button>
+    </div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const transport = params.get('transport');
+        const distance = parseFloat(params.get('distance')) || 0;
+        const result = document.getElementById('result');
+        if (transport && distance > 0) {
+            let emissionPerKm = 0;
+            if (transport === 'Moto') emissionPerKm = 0.103;
+            if (transport === 'Carro') emissionPerKm = 0.192;
+            if (transport === 'Ônibus') emissionPerKm = 0.027;
+            if (transport === 'Avião') {
+                if (distance <= 1000) emissionPerKm = 0.25;
+                else if (distance <= 3000) emissionPerKm = 0.15;
+                else emissionPerKm = 0.10;
+            }
+            const totalEmission = distance * emissionPerKm;
+            result.textContent = `Emissão para ${distance} km com ${transport}: ${totalEmission.toFixed(2)} kg de CO₂.`;
+        } else {
+            result.textContent = 'Por favor, insira uma distância válida.';
+        }
+    </script>
+</body>
+</html>
