@@ -1,3 +1,5 @@
+
+
 body {
     background-color: rgb(255, 255, 255);
 }
@@ -13,20 +15,8 @@ body {
     position: relative;
 }
 
-.carro-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: fit-content;
-    margin: 0 auto;
-}
 
-.backG {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+
 
 .btnInicio {
     position: absolute;
@@ -68,8 +58,36 @@ input {
     padding: 0;
 }
 
-.inputCarro,
-.btnSeguir {
+
+
+.carro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: fit-content;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20%;
+}
+
+
+.backG {
+    display: block;
+    max-width: 70%;
+    height: 80%;
+}
+
+.centro-sobre-carro {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    display: flex;
+    font-weight: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputCarro {
     width: 120px;
     height: 40px;
     box-sizing: border-box;
@@ -79,19 +97,7 @@ input {
     margin: 0;
 }
 
-.centro-sobre-carro {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    gap: 10px; 
-}
-
 .btnSeguir {
-    position: static; 
-    margin: 0;
     background-color: rgb(18, 85, 3);
     color: white;
     box-shadow: rgba(211, 24, 24, 0.25) 0px 54px 55px,
@@ -99,8 +105,8 @@ input {
                 rgba(0, 0, 0, 0.12) 0px 4px 6px,
                 rgba(0, 0, 0, 0.17) 0px 12px 13px,
                 rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    margin-bottom: 10px; 
-    margin-top: 100px;
+    width: 120px;
+    height: 40px;
 }
 
 .botao-invisivel {
