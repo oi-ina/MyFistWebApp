@@ -60,54 +60,12 @@ input {
 
 
 
-.carro-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: fit-content;
-    margin: 0 auto;
-    background-color: rgb(255, 255, 255);
-    margin-top: 20%;
-}
-
-
 .backG {
     display: block;
     max-width: 70%;
     height: 80%;
 }
 
-.centro-sobre-carro {
-    background-color: rgb(255, 255, 255);
-    padding: 10px;
-    display: flex;
-    font-weight: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.inputCarro {
-    width: 120px;
-    height: 40px;
-    box-sizing: border-box;
-    font-size: 16px;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-.btnSeguir {
-    background-color: rgb(18, 85, 3);
-    color: white;
-    box-shadow: rgba(211, 24, 24, 0.25) 0px 54px 55px,
-                rgba(0, 0, 0, 0.12) 0px -12px 30px,
-                rgba(0, 0, 0, 0.12) 0px 4px 6px,
-                rgba(0, 0, 0, 0.17) 0px 12px 13px,
-                rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    width: 120px;
-    height: 40px;
-}
 
 .botao-invisivel {
     display: block;
