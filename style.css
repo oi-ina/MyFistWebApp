@@ -67,36 +67,6 @@ input {
 }
 
 
-.botao-invisivel {
-    display: block;
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
-}
-
-#btn-curto {
-    top: 675px;
-    left: 545px;
-    width: 12.5%;
-    height: 23%;
-}
-
-#btn-medio {
-    top: 675px;
-    left: 815px;
-    width: 12.5%;
-    height: 23%;
-}
-
-#btn-longo {
-    top: 675px;
-    left: 1085px;
-    width: 12.5%;
-    height: 23%;
-}
-
-
-
 .entrada {
     position: relative;
     width: 100%;
