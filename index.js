@@ -38,3 +38,4 @@ function validateUser(credenciais){
     let senhaTxt = credenciais.split("/")[1]
     return inputNome.value == nomeTxt && inputSenha.value == senhaTxt
 }
+
