@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #2d2f12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: #2d2f12;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+button {
+    width: 120px;
+    height: 120px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sim {
+    background-color: #2d2f12;
+    color: white;
+    border: none;
+}
+
+.nao {
+    background-color: transparent;
+    color: #2d2f12;
+    border: 2px solid #2d2f12;
+}
+
+.sim:hover,
+.nao:hover 
+    {
+    transform: scale(1.05);
+    }
