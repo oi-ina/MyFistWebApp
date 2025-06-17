@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #2d2f12;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #2d2f12;
+}
+
+#resumo {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  padding: 30px;
+}
+
+#resumo p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+#resumo h2 {
+  font-size: 1.8em;
+  margin-top: 30px;
+  color: #004080;
+}
+
+#resumo h3 {
+  font-size: 2em;
+  margin-top: 20px;
+  color: #007000;
+}

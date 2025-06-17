@@ -1,0 +1,65 @@
+.telaInicial {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+
+/* definição btn arvore*/
+.botaoArvore {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.botaoArvore img {
+    width: 300px; /* Ajuste o tamanho da árvore */
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.botaoArvore:hover img {
+    transform: scale(1.05);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Joga tudo pro canto direito */
+    gap: 15px; /* Espaço entre os botões */
+    position: absolute; /* Fixa no topo */
+    top: 20px;
+    right: 30px;
+}
+
+nav a {
+    color: #4A5518;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    background: none; 
+    padding: 0; /* isso aqui é a borda certinha na árvore */
+    border: none;
+}
+
+nav a:hover {
+    text-decoration: underline; 
+    color: #ADB858; /* muda a cor quando passa mouse */
+}
+
+nav div {
+    display: inline-block; /* pra deixar os btn lado a lado */
+}
+
+/* ficava mudando pra roxo, ai tive que por isso aqui */
+nav a:link,
+nav a:visited,
+nav a:hover,
+nav a:active {
+    color: #4A5518;;
+    text-decoration: none;
+}
